@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Crafted Beers</title>
+
+	<meta charset="UTF-8">
+	<meta name="author" content="Kunal Batra">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 header-col">
+				<h2 class="logo-text">Vivriti Crafts Beer</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 cover-img-col">
+				<div class="overlay"></div>
+				<div class="tagline-div">
+					<h3 class="tagline">Get Your Favorite Beer Now !!</h3>
+				</div>
+				<div class="searchbar-container">
+					<input type="text" name="searchbar" class="beer-search" placeholder="Search by Beer name or Beer style..." id="searchBeer">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<h3 class="list-text">List of Beers</h3>
+			</div>
+			<div class="col-xs-6">
+				<div class="sort-div">
+					<label class="sort-label">Sort by Alcohol Content :</label>
+					<select class="sort-select">
+						<option value="">Select</option>
+						<option value="asce">Ascending Order</option>
+						<option value="desc">Descending Order</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row beer-card-row"></div>
+	</div>
+	<div class="loader"></div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>

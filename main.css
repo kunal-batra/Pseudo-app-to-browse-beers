@@ -1,0 +1,164 @@
+html, body{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.header-col{
+	background-color: #4a4a4a;
+}
+
+.logo-text{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+
+.cover-img-col{
+	background: url('https://i.imgur.com/J4EqC8a.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	background-position: center;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 1;
+}
+
+.tagline-div, .searchbar-container{
+	z-index: 2;
+}
+
+.tagline-div{
+	margin-top: 100px;
+}
+
+.tagline{
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+	text-shadow: 0 2px 4px black;
+	z-index: 2;
+}
+
+.searchbar-container{
+	margin: auto;
+	width: 60%;
+	position: relative;
+	margin-top: 20px;
+}
+
+.beer-search{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	padding: 8px 16px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.sort-div{
+	float: right;
+}
+
+.sort-div::after{
+	clear: both;
+}
+
+.sort-label, .sort-select{
+	display: inline-block;
+	margin-top: 24px;
+}
+
+.sort-label{
+	margin-right: 8px;
+}
+
+.beer-card-div{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.beer-card{
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.beer-img-div{
+	padding-right: 7px;
+	margin-top: 15px;
+}
+
+.beer-img{
+	width: 100%;
+	height: auto;
+}
+
+.beer-info{
+	padding-left: 7px;
+}
+
+.beer-name, .beer-style, .beer-abv, .beer-ibu, .beer-ounce, .beer-id{
+	margin-bottom: 0;
+}
+
+.beer-name, .beer-style{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.beer-name{
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.loader{
+	position: fixed;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
+	border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #ff8f43;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite;
+    z-index: 3;
+}
+
+@keyframes spin{
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media(max-width: 767px){
+	.searchbar-container{
+		width: 100%;
+		max-width: 400px;
+	}
+	.cover-img-col{
+		height: 200px;
+	}
+	.sort-select{
+		margin-top: 0px;
+	}
+}
+
+@media(max-width: 992px){
+	.beer-img-div{
+		margin-top: 5px;
+	}
+}
